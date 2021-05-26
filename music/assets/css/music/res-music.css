@@ -1,0 +1,114 @@
+/* mobile+tab */
+
+@media (max-width: 1023px){
+    .grid.wide{
+        padding: 0 15px;
+    }
+    .navbar__list{
+        flex-direction: column;
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        top: 8vh;
+        background: linear-gradient(to bottom, #161a1a 0%, rgba(38,41,41,0.99) 100%);
+        padding: 20px;
+        transform: translateX(100%);
+        transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    }
+    .navbar-active{
+        transform: translateX(0%);
+
+    }
+    .navbar__list li{
+        margin-bottom: 20px;
+    }
+    .btn-signin{
+        margin-right: 40px;
+    }
+    .navres{
+        display: block;
+        float: right;
+        position: relative;
+        bottom: 56px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    .drop-menu{
+        position: absolute;
+        left: 15%;
+    }
+    .banner__intro{
+        max-width: 80%;
+    }
+    .benefit__desc{
+        max-width: 100%;
+    }
+    .benefit__item{
+        margin-bottom: 30px;
+    }
+    .sub__content-top{
+        max-width: 100%;
+    }
+    .footer__content-item2{
+        float: none;
+        margin-top: 20px;
+    }
+    .footer__content-list{
+        margin-top: 26px;
+    }
+    .modal__body{
+        width: 50%;
+    }
+}
+
+/* mobile */
+
+@media (max-width: 739px){
+    .banner__intro{
+        max-width: 100%;
+    }
+    .banner__intro h1{
+        font-size: 34px;
+    }
+    .btn-download{
+        flex-direction: column;
+    }
+    .btn-down1{
+        margin-bottom: 40px;
+    }
+    .btn-down1 a{
+        margin-right: 0;
+    }
+    .benefit__desc{
+        max-width: 100%;
+    }
+    .benefit__item{
+        margin-bottom: 30px;
+    }
+    .sub__content-top{
+        max-width: 100%;
+    }
+    .footer__content-item2{
+        float: none;
+        margin-top: 20px;
+    }
+    .footer__content-list{
+        margin-top: 26px;
+    }
+    .sub__content-item{
+        margin-bottom: 20px;
+    }
+    .modal__body{
+        width: 75%;
+    }
+}
+/* tablet */
+
+@media (min-width: 740px) and (max-width: 1023px){
+    
+}
+
+/* big tablet */
+
+@media (min-width:1024px){
+}

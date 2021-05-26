@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/music/feature.css">
+    <link rel="stylesheet" href="./assets/css/music/res-feature.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Feature</title>
+</head>
+<body>
+    <!-- header -->
+
+    <header>
+        <div class="container">
+            <div class="header__content">
+                <div class="header__left">
+                    <a href="index.html">
+                        <img src="data:image/webp;base64,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" alt="">
+                    </a>
+                </div>
+                <div class="header__navbar">
+                    <ul class="navbar__list">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="feature.html">Features</a>
+                        </li>
+                        <li>
+                            <a href="pricing.html">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="">Download</a>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a class="navbar__list-link" href="blog.html">Blog
+                                <div class="drop-menu">
+                                    <ul class="drop-menu-item">
+                                        <a href=""><li>Blog</li></a>
+                                        <a href=""><li>Blog details</li></a>
+                                        <a href=""><li>Blog editors</li></a>
+                                    </ul> 
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>                              
+                    </ul>
+                </div>
+                <div class="btn-signin">
+                    <a href="">SIGN IN</a>
+                </div>
+            </div>
+            <div class="navres">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <script src="./assets/js/nav.js"></script>
+        </div>
+    </header>
+
+<!-- banner -->
+
+    <div class="banner">
+        <div class="container">
+            <div class="banner__content">
+                <h1>Features</h1>  
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div class="about">
+        <div class="grid wide">
+            <div class="row about__content">
+                <div class="col l-6 m-12 c-12">
+                    <div class="about__content-left">
+                        <img src="./assets/image/xabout1.png.pagespeed.ic.5Gj3LraFvx.webp" alt="">
+                    </div>
+                </div>
+                <div class="col l-6 m-12 c-12">
+                    <div class="about__content-right">
+                        <img src="./assets/image/xsound.png.pagespeed.ic.aqZmb5nW4H.webp" alt="">
+                        <h2>Listen to a personal lized mix of tracks</h2>
+                        <div class="about__content-list">
+                            <div class="about__content-item">
+                                <div><img src="./assets/image/number1.svg" alt=""></div>
+                                <p>Reduce unnecessary spend with real time insights into every penny spent.</p>
+                            </div>
+                            <div class="about__content-item">
+                                <div><img src="./assets/image/number2.svg" alt=""></div>
+                                <p>Reduce unnecessary spend with real time insights into every penny spent.</p>
+                            </div>
+                            <div class="about__content-item">
+                                <div><img src="./assets/image/number3.svg" alt=""></div>
+                                <p>Reduce unnecessary spend with real time insights into every penny spent.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about2 -->
+
+    <div class="about2">
+        <div class="grid wide">
+            <div class="row about2__content"> 
+                <div class="col l-6 m-12 c-12">
+                    <div class="about2__content-left">
+                        <h2>We are tender heart charity foundation</h2>
+                        <div class="about2__content-list">
+                            <div class="about2__content-item">
+                                <img src="./assets/image/finder.svg" alt="">
+                                <p>Reduce unnecessary spend with real time insights into every penny spent.</p>
+                            </div>
+                            <div class="about2__content-item">
+                                <img src="./assets/image/finder.svg" alt="">
+                                <p>Reduce unnecessary spend with real time insights into every penny spent.</p>
+                            </div>
+                            <div class="about2__content-item">
+                                <img src="./assets/image/finder.svg" alt="">
+                                <p>Reduce unnecessary spend with real time insights into every penny spent.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-6 m-12 c-12">
+                    <div class="about2__content-right">
+                        <img src="./assets/image/xabout2.png.pagespeed.ic.72aMp8Hctl.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- benefit -->
+
+    <div class="benefit">
+        <div class="grid wide">
+            <div class="benefit__content">
+                <div class="benefit__desc">
+                    <h2>Get ready for seamless online music</h2>
+                    <p>Utrust is a seamless integration that gives e-commerce businesses the power to accept digital currencies - and get all the benefits you can’t with just traditional payment methods</p>
+                </div>
+                <div class="row benefit__list">
+                    <div class="col l-3 m-6 c-12">
+                        <div class="benefit__item">
+                            <div><img src="./assets/image/xonlinemusic1.png.pagespeed.ic.-YIR7EM0TZ.webp" alt=""></div>
+                            <h3>
+                                <a href="">Offline mode</a>
+                            </h3>
+                            <p>Save and listen anywhere</p>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="benefit__item">
+                            <div><img src="./assets/image/xonlinemusic2.png.pagespeed.ic.Cceh80Y6Rl.webp" alt=""></div>
+                            <h3>
+                                <a href="">High quality audio</a>
+                            </h3>
+                            <p>Enjoy the full range of sound.</p>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="benefit__item">
+                            <div><img src="./assets/image/xonlinemusic3.png.pagespeed.ic.zgqB0nbRru.webp" alt=""></div>
+                            <h3>
+                                <a href="">No ads</a>
+                            </h3>
+                            <p>Enjoy nonstop music.</p>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="benefit__item">
+                            <div><img src="./assets/image/xonlinemusic4.png.pagespeed.ic.Eik9M26QE1.webp" alt=""></div>
+                            <h3>
+                                <a href="">Unlimited skips</a>
+                            </h3>
+                            <p>Just tap skip.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="grid wide">
+            <div class="footer__content row">
+                <div class="col l-3 m-6 c-12">
+                    <div class="footer__content-item">
+                        <div class="footer__content-img">
+                            <a href="">
+                                <img src="./assets/image/xlogo2_footer.png.pagespeed.ic.fA7EE93fLo.webp" alt="">
+                            </a>
+                            <p>Utrust is a seamless integration that gives e-commerce businesses the power to accept digital currencies - and get all the benefit.</p>
+                        </div>
+                        <div class="footer__logo">
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-3 m-6 c-12">
+                    <div class="footer__content-item2">
+                        <h2>Quick Links</h2>
+                        <ul class="footer__content-list">
+                            <li><a href="">Work</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">Tips & Tricks</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l-3 m-6 c-12">
+                    <div class="footer__content-item2">
+                        <h2>Support</h2>
+                        <ul class="footer__content-list">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l-3 m-6 c-12">
+                    <div class="footer__content-item2">
+                        <h2>Navigation</h2>
+                        <ul class="footer__content-list">
+                            <li><a href="">Work</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">Tips & Tricks</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="split2"></div>
+            <div class="footer__copyright">
+                <p>Copyright ©2021 All rights reserved | This template is made with <i class="fas fa-heart"></i> by <a href="">Colorlib</a></p>
+            </div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-long-arrow-alt-up"></i></button>
+            <script>
+                //Get the button:
+                mybutton = document.getElementById("myBtn");
+
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {scrollFunction()};
+
+                function scrollFunction() {
+                if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 300) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+                }
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                }
+            </script>
+        </div>
+    </footer>
+</body>
+</html>
