@@ -64,6 +64,9 @@
 /* mobile */
 
 @media (max-width: 739px){
+    .btn-signin{
+        display: none;
+    }
     .banner__intro{
         max-width: 100%;
     }
