@@ -13,7 +13,7 @@ header{
     position: fixed;
     top: 0%;
     width: 100%;
-    /* background: linear-gradient(to bottom, #161a1a 0%, rgba(38,41,41,0.99) 100%); */
+    background: linear-gradient(to bottom, #161a1a 0%, rgba(38,41,41,0.99) 100%);
     z-index: 4;
 }
 .header__content{
